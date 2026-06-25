@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Operation: Heartbreaker</title>
+<title>Operation: ROMANCE</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div id="game"></div>
+<!-- Animated Background -->
+<div id="background">
 
-    <script src="script.js"></script>
+    <div id="grid"></div>
+
+    <canvas id="particles"></canvas>
+
+</div>
+
+<!-- HUD -->
+<div id="hud">
+
+    <div id="topLeft">
+
+        <div class="hudTitle">
+            TACTICAL COMMAND
+        </div>
+
+        <div id="systemStatus">
+            SYSTEM ONLINE
+        </div>
+
+    </div>
+
+    <div id="topRight">
+
+        <canvas id="radar" width="220" height="220"></canvas>
+
+    </div>
+
+</div>
+
+<!-- Main Content -->
+
+<div id="game"></div>
+
+<!-- Bottom HUD -->
+
+<div id="bottomBar">
+
+    <div id="coords">
+
+        LAT 41.289°N
+
+        LON 73.921°W
+
+    </div>
+
+    <div id="clock">
+
+        00:00:00
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
